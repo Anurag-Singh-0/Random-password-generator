@@ -48,3 +48,17 @@ copy.addEventListener("click", () => {
     alert("Password copied to clipboard!");
   });
 });
+
+// Popup functionality
+const popup = document.getElementById("popup");
+const closePopup = document.getElementById("closePopup");
+
+// Show popup when the page loads
+window.onload = () => {
+  popup.style.display = "flex";
+};
+
+// Hide popup when the close button is clicked
+closePopup.addEventListener("click", () => {
+  popup.style.display = "none";
+});

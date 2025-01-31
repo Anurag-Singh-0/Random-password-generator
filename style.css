@@ -40,7 +40,7 @@ body {
   background-color: #fff;
 }
 
-.container .display input{
+.container .display input {
   width: 90%;
   padding: 10px;
   cursor: pointer;
@@ -49,7 +49,7 @@ body {
   font-size: 20px;
 }
 
-#passLength[type="range"]{
+#passLength[type="range"] {
   width: 50%;
 }
 
@@ -59,7 +59,7 @@ body {
   cursor: pointer;
 }
 
-.container .settings .passRange{
+.container .settings .passRange {
   height: 3rem;
   display: flex;
   align-items: center;
@@ -90,12 +90,55 @@ body {
   border-radius: 5px;
 }
 
-.spacialChar label{
+.spacialChar label {
   font-size: 20px;
 }
 
-.spacialChar label input{
+.spacialChar label input {
   margin: 15px;
 }
 
+/* Popup styles */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
 
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+  color: #000;
+}
+
+.popup-content h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.popup-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#closePopup {
+  padding: 10px 20px;
+  background: #00adb5;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 5px;
+}

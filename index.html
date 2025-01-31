@@ -18,7 +18,7 @@
 
         <div class="settings">
             <div class="passRange">
-                <label>Password Length - <span id="lengthValue">12</span></label>
+                <label>Password Length: <span id="lengthValue">12</span></label>
                 <input type="range" id="length" min="6" max="20" value="12">
             </div>
             
@@ -30,6 +30,14 @@
         </div>
 
         <button class="btn"><i class="fa-solid fa-bolt"></i> Generate Password</button>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Welcome to Random Password Generator</h2>
+            <p>This tool helps you generate strong passwords for better security. You can customize the password length and include numbers or special characters.</p>
+            <button id="closePopup">Close</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
