@@ -9,5 +9,93 @@
 
 body {
   background-color: #222831;
-  color: EEEEEE;
+  color: #eeeeee;
 }
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  margin: 9%;
+}
+
+.container h1 {
+  font-weight: 600;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.container h1 span {
+  color: #00adb5;
+  border-bottom: 4px solid #00adb5;
+}
+
+.container .display {
+  width: 100%;
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.container .display input{
+  width: 90%;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+#passLength[type="range"]{
+  width: 50%;
+}
+
+.container .display i {
+  color: #00adb5;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.container .settings .passRange{
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.container .settings .passRange label {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.container .settings .spacialChar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.container .btn {
+  padding: 10px;
+  background: #00adb5;
+  border: 0;
+  outline: 0;
+  font-size: 15px;
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.spacialChar label{
+  font-size: 20px;
+}
+
+.spacialChar label input{
+  margin: 15px;
+}
+
+

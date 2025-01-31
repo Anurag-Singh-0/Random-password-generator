@@ -5,10 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Password Generator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
-        
+        <h1>Generate a <br><span>Random Password</span></h1>
+
+        <div class="display">
+            <input type="text" id="password" placeholder="Password" readonly>
+            <i class="fa-regular fa-copy" id="copy"></i>
+        </div>
+
+        <div class="settings">
+            <div class="passRange">
+                <label>Password Length - <span id="lengthValue">12</span></label>
+                <input type="range" id="length" min="6" max="20" value="12">
+            </div>
+            
+            <div class="spacialChar">
+                <h3>Use Characters</h3>
+                <label><input type="checkbox" id="includeNumbers" checked> 1234</label>
+                <label><input type="checkbox" id="includeSymbols" checked> #$&%</label>
+            </div>
+        </div>
+
+        <button class="btn"><i class="fa-solid fa-bolt"></i> Generate Password</button>
     </div>
 
     <script src="script.js"></script>
