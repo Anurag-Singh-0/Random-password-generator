@@ -14,12 +14,12 @@ const specialChars = "!@#$%^&*()_+-={}[]|:;<>,.?/";
 
 function createPassword() {
   let password = "";
-  let allowedChars = upperCase + lowerCase;
+  let defaultChar = upperCase + lowerCase;
 
-  if (includeNumbers.checked) allowedChars += numbers;
-  if (includeSymbols.checked) allowedChars += specialChars;
+  if (includeNumbers.checked) defaultChar += numbers;
+  if (includeSymbols.checked) defaultChar += specialChars;
 
-  if (allowedChars.length === 0) {
+  if (defaultChar.length === 0) {
     alert("Please select at least one character type!");
     return;
   }
@@ -29,17 +29,21 @@ function createPassword() {
 
   let passLength = parseInt(lengthInput.value);
   while (password.length < passLength) {
-    password += allowedChars[Math.floor(Math.random() * allowedChars.length)];
+    password += defaultChar[Math.floor(Math.random() * defaultChar.length)];
   }
 
-  passwordBox.value = password.split("").sort(() => Math.random() - 0.5).join("");
+  passwordBox.value = password
+    .split("")
+    .sort(() => Math.random() - 0.5)
+    .join("");
 }
+
+btn.addEventListener("click", createPassword);
 
 lengthInput.addEventListener("input", () => {
   lengthValue.textContent = lengthInput.value;
 });
 
-btn.addEventListener("click", createPassword);
 
 copy.addEventListener("click", () => {
   if (!passwordBox.value) return;

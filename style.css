@@ -91,11 +91,17 @@ body {
 }
 
 .spacialChar label {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .spacialChar label input {
   margin: 15px;
+}
+
+
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
 }
 
 /* Popup styles */
